@@ -85,7 +85,7 @@ header {
   z-index: 1;
 }
 
-/* Navigation */
+/* Barre de navigation */
 
 header .nav .logo {
   width: 10rem;
@@ -122,10 +122,9 @@ header .nav .right span {
   font-weight: bold;
 }
 
-
 /* Hero */
 
-.hero {
+main .hero {
   position: relative; 
   background-image: url(/images/home-hero-background.webp);
   height: 100vh;
@@ -141,7 +140,7 @@ header .nav .right span {
 
 /* Background filter */
 
-.hero::before {
+main .hero::before {
   content: "";
   position: absolute;
   top: 0;
@@ -151,20 +150,20 @@ header .nav .right span {
   background-color: rgba(0,0,0,0.6);  
 }
 
-.hero p,
-.hero h2 {
+main .hero p,
+main .hero h2 {
   position: relative;
   color: white;
 }
 
-.hero p {
+main .hero p {
   font-family: "Sen";
   opacity: 70%;
   font-weight: bold;
   margin-top: 5rem;
 }
 
-.hero h2 {
+main .hero h2 {
   font-size: 4rem;
   font-family: "Sen";
   width: 70%;
@@ -172,13 +171,13 @@ header .nav .right span {
 
 /* Form Appoitment */
 
-.appointment {
+main .appointment {
   position: relative;
   margin-top: -5rem;
   font-family: "Sen";
 }
 
-.appointment .box {
+main .appointment .box {
   background: white;
   width: 70%;
   margin: 0 auto;
@@ -188,20 +187,20 @@ header .nav .right span {
   padding-right: 4rem;
 }
 
-.appointment .text {
+main .appointment .box .text {
   text-align: center;
   margin-bottom: 1.5rem;
   margin-top: 2rem;
 }
 
-.appointment form {
+main .appointment .box form {
   display: flex;
   justify-content: space-evenly;
   gap: 1rem;
 }
 
-.appointment input,
-.appointment select {
+main .appointment .box input,
+main .appointment .box select {
   display: flex;
   width: 25rem;
   padding: 1rem;
@@ -210,12 +209,12 @@ header .nav .right span {
   font-family: "OpenSans";
 }
 
-.appointment input[type="submit"] {
+main .appointment input[type="submit"] {
   background: black;
   color: white;
 }
 
-.appointment input[type="submit"]:hover {
+main .appointment input[type="submit"]:hover {
   background: white;
   color: black;
   outline: 1px solid black;
@@ -224,13 +223,13 @@ header .nav .right span {
 
 /* Services background */
 
-.services {
+main .services {
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
-.services::before {
+main .services::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -239,20 +238,20 @@ header .nav .right span {
   background: black;
 }
 
-.services .servicesText,
-.services .servicesCard,
-.services .servicesButton {
+main .services .servicesText,
+main .services .servicesCard,
+main .services .servicesButton {
   position: relative;
 }
 
-.appointment .box {
+main .appointment .box {
   position: relative;
   z-index: 2;
 }
 
 /* Services text */
 
-.services .servicesText {
+main .services .servicesText {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -263,12 +262,12 @@ header .nav .right span {
   padding-top: 5rem;
 }
 
-.services .servicesText h2 {
+main .services .servicesText h2 {
   font-size: 2rem;
   font-weight: 500;
 }
 
-.services .servicesText p {
+main .services .servicesText p {
   font-size: 1.2rem;
   opacity: 60%;
   width: 60%;
@@ -277,7 +276,7 @@ header .nav .right span {
 
 /* Services cards */
 
-.services .servicesCard {
+main .services .servicesCard {
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -285,7 +284,7 @@ header .nav .right span {
   margin: 0 auto;
 }
 
-.services .servicesCard .card {
+main .services .servicesCard .card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -296,27 +295,27 @@ header .nav .right span {
   border: 2px solid #f7f7f7;
 }
 
-.services .servicesCard .card:hover {
+main .services .servicesCard .card:hover {
   transform: scale(1.05);
   transition: transform 0.3s
 }
 
-.services .servicesCard .card img {
+main .services .servicesCard .card img {
   width: 5rem;
 }
 
-.services .servicesCard .card h3 {
+main .services .servicesCard .card h3 {
   font-family: "Sen";
 }
 
-.services .servicesCard .card p {
+main .services .servicesCard .card p {
   text-align: center;
   width: 70%;
   font-family: "OpenSans";
   font-size: 0.9rem;
 }
 
-.services .servicesCard .card .price {
+main .services .servicesCard .card .price {
   font-weight: bold;
   font-size: 1rem;
   margin-top: 2rem;
@@ -324,14 +323,14 @@ header .nav .right span {
 
 /* Services buttons */
 
-.services .servicesButton {
+main .services .servicesButton {
   display: flex;
   justify-content: center;
   padding: 4rem;
   gap: 2rem;
 }
 
-.services .servicesButton [type="submit"] {
+main .services .servicesButton [type="submit"] {
   padding: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -341,7 +340,7 @@ header .nav .right span {
   color: white;
 }
 
-.services .servicesButton [type="submit"]:hover {
+main .services .servicesButton [type="submit"]:hover {
   background-color: #f7f7f7;
   color: black;
   outline: 1px solid black;
@@ -350,49 +349,49 @@ header .nav .right span {
 
 /* About */
 
-.about {
+main .about {
   width: 70%;
   margin: 0 auto;
   margin-top: 3rem;
   font-family: "OpenSans";
 }
 
-.about .aboutCard {
+main .about .aboutCard {
   display: flex;
   align-items: center;
   gap: 4rem;
   margin-bottom: 5rem;
 }
 
-.about .aboutImg {
+main .about .aboutImg {
   width: 130rem;
 }
 
-.about .aboutText h2 {
+main .about .aboutText h2 {
   font-family: "Sen";
   font-size: 2rem;
   width: 20rem;
 }
 
-.about .aboutText p {
+main .about .aboutText p {
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
 
-.about .aboutText ul {
+main .about .aboutText ul {
   font-family: "Sen";
   font-weight: bold;
 }
 
-.about .aboutText ul li {
+main .about .aboutText ul li {
   padding-top: 1rem;
 }
 
-.about .aboutText ul li i {
+main .about .aboutText ul li i {
   margin-right: 1rem;
 }
 
-.about .aboutText a {
+main .about .aboutText a {
   display: inline-block;
   background-color: black;
   color: white;
@@ -402,7 +401,7 @@ header .nav .right span {
   margin-top: 1rem;
 }
 
-.about .aboutText a:hover {
+main main.about .aboutText a:hover {
   background-color: white;
   color: black;
   outline: 1px solid black;
@@ -411,13 +410,13 @@ header .nav .right span {
 
 /* How it Works */
 
-.how .howText {
+main .how .howText {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.how .howText p {
+main .how .howText p {
   font-family: "OpenSans";
   font-weight: bold;
   padding-top: 3rem;
@@ -425,12 +424,12 @@ header .nav .right span {
   opacity: 70%;
 }
 
-.how .howText h2 {
+main .how .howText h2 {
   font-family: "Sen";
   font-size: 2rem;
 }
 
-.how .howBox {
+main .how .howBox {
   display: flex;
   justify-content: center;
   width: 90%;
@@ -439,7 +438,7 @@ header .nav .right span {
   gap: 2rem;
 }
 
-.how .howBox .howCard {
+main .how .howBox .howCard {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -449,33 +448,33 @@ header .nav .right span {
   margin-bottom: 5rem;
 }
 
-.how .howBox .howCard h3 {
+main .how .howBox .howCard h3 {
   font-family: "Sen";
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
 
-.how .howBox .howCard p {
+main .how .howBox .howCard p {
   font-family: "OpenSans";
   text-align: center;
   width: 80%;
 }
 
-.how .howBox .howCard:hover {
+main .how .howBox .howCard:hover {
   transform: scale(1.05);
   transition: transform 0.3s
 }
 
 /* Review */
 
-.review .reviewTitle {
+main .review .reviewTitle {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: "Sen";
 }
 
-.review .reviewTitle p {
+main .review .reviewTitle p {
   font-family: "OpenSans";
   font-weight: bold;
   padding-top: 3rem;
@@ -483,12 +482,12 @@ header .nav .right span {
   opacity: 70%;
 }
 
-.review .reviewTitle h2 {
+main .review .reviewTitle h2 {
   font-family: "Sen";
   font-size: 2rem;
 }
 
-.reviewBox {
+main .reviewBox {
   display: flex;
   justify-content: center;
   width: 90%;
@@ -497,53 +496,54 @@ header .nav .right span {
   gap: 2rem;
 }
 
-.reviewCard {
+main .reviewCard {
   border: 1px solid #e3e2e2;
   padding: 2rem;
   margin-bottom: 5rem;
+  max-width: 28rem;
 }
 
-.reviewCard .svg svg {
+main .reviewCard .svg svg {
   width: 2rem;
   color: #ffcd05; 
   margin-bottom: 1rem;
 }
 
-.reviewText {
+main .reviewText {
   margin-bottom: 1.5rem;
   width: 70%;
   margin-left: 2rem;
   font-family: "OpenSans";
 }
 
-.avatar {
+main .avatar {
   width: 40px;
   height: 40px;
 }
 
-.bottomCard {
+main .bottomCard {
   display: flex;
   gap: 1rem;
   font-family: "OpenSans";
   margin-left: 2rem;
 }
 
-.bottomCard .name {
+main .bottomCard .name {
   font-weight: bold;
 }
 
-.bottomCard .avatarText .type {
+main .bottomCard .avatarText .type {
   font-size: 0.8rem;
 }
 
-.review .reviewBox .reviewCard:hover {
+main .review .reviewBox .reviewCard:hover {
   transform: scale(1.05);
   transition: transform 0.3s
 }
 
 /* Logos */
 
-.logos {
+main .logos {
   height: 3rem;
   display: flex;
   justify-content: center;
@@ -553,7 +553,7 @@ header .nav .right span {
 
 /* Contact */
 
-.contactHero {
+main .contactHero {
   background-image: url(/images/home-contact-section-background.webp);
   display: flex;
   justify-content: space-around;
@@ -565,7 +565,7 @@ header .nav .right span {
   margin-bottom: 5rem;
 }
 
-.contactHero::before {
+main .contactHero::before {
   content: "";
   position: absolute;
   top: 0;
@@ -575,30 +575,30 @@ header .nav .right span {
   background-color: rgba(0,0,0,0.6);
 }
 
-.contactHeroText {
+main .contactHeroText {
   position: relative;
   color: white;
   max-width: 65%;
 }
 
-.contactHeroText p {
+main .contactHeroText p {
   font-family: "Sen";
   opacity: 70%;
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
-.contactHeroText h2 {
+main .contactHeroText h2 {
   font-size: 3rem;
   font-family: "Sen";
   font-weight: 500;
 }
 
-.contactHeroButton {
+main .contactHeroButton {
   position: relative;
 }
 
-.contactHeroButton a {
+main .contactHeroButton a {
   font-size: 1rem;
   font-family: "OpenSans";
   background-color: white;
@@ -606,11 +606,13 @@ header .nav .right span {
   padding: 1rem 1.5rem;
 }
 
-.contactHeroButton a:hover {
+main .contactHeroButton a:hover {
   background-color: black;
   color: white;
   transition: 0.2s;
 }
+
+/* Footer */
 
 footer .footerColumns {
   display: flex;
