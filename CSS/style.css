@@ -148,14 +148,12 @@ header .nav .right span {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.6); 
-  z-index: 0; 
+  background-color: rgba(0,0,0,0.6);  
 }
 
 .hero p,
 .hero h2 {
   position: relative;
-  z-index: 1;
   color: white;
 }
 
@@ -553,4 +551,64 @@ header .nav .right span {
   margin-bottom: 5rem;
 }
 
+/* Contact */
+
+.contactHero {
+  background-image: url(/images/home-contact-section-background.webp);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 10rem;
+  height: 25rem;
+  position: relative;
+  background-size: cover;
+  margin-bottom: 5rem;
+}
+
+.contactHero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.contactHeroText {
+  position: relative;
+  color: white;
+  max-width: 65%;
+}
+
+.contactHeroText p {
+  font-family: "Sen";
+  opacity: 70%;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.contactHeroText h2 {
+  font-size: 3rem;
+  font-family: "Sen";
+  font-weight: 500;
+}
+
+.contactHeroButton {
+  position: relative;
+}
+
+.contactHeroButton a {
+  font-size: 1rem;
+  font-family: "OpenSans";
+  background-color: white;
+  color: black;
+  padding: 1rem 1.5rem;
+}
+
+.contactHeroButton a:hover {
+  background-color: black;
+  color: white;
+  transition: 0.2s;
+}
 
