@@ -56,7 +56,7 @@ html {
   text-size-adjust: 100%;
 }
 
-/* fonts */
+/* Fonts */
 
 @font-face {
   font-family: "OpenSans Italic";
@@ -73,6 +73,10 @@ html {
   src: url(../Font/Open_Sans,Sen/Sen/Sen-VariableFont_wght.ttf);
 }
 
+body {
+  background-color: black;
+}
+
 /* Header */
 
 header {
@@ -81,29 +85,31 @@ header {
   font-family: OpenSans;
   position: absolute;
   top: 5%;
-  left: 0;
   width: 100%;
   z-index: 1;
 }
 
 /* Navigation */
 
+header .nav .logo {
+  width: 10rem;
+}
+
 header .nav {
   background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
-  padding: 1.5rem;
+  width: 70%;
+  padding: 1.2rem;
 }
 
 header .nav .menu ul {
   display: flex;
-  gap: 1rem;
 }
 
 header .nav .menu ul a {
-  padding: 1.9rem;
+  padding: 1.3rem;
 }
 
 header .nav .menu ul a:hover {
@@ -113,16 +119,13 @@ header .nav .menu ul a:hover {
 
 header .nav .right {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 header .nav .right span {
   font-weight: bold;
 }
 
-header .nav .logo {
-  width: 15rem;
-}
 
 /* Hero */
 
@@ -173,3 +176,44 @@ header .nav .logo {
   width: 70%;
 }
 
+/* Form Appoitment */
+
+.appointment {
+  position: relative;
+  margin-top: -5rem;
+  font-family: "Sen";
+}
+
+.appointment .box {
+  background: white;
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.appointment .text {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+}
+
+.appointment form {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.appointment input,
+.appointment select {
+  display: flex;
+  width: 15rem;
+  padding: 1rem;
+  border-style: none;
+  background-color: #f7f7f7;
+  font-family: "OpenSans";
+}
+
+.appointment input[type="submit"] {
+  background: black;
+  color: white;
+}

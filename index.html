@@ -1,45 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>maquette_cleaning_service</title>
 </head>
+
 <body>
 
-<header>
+    <header>
 
-    <div class="nav">
+        <div class="nav">
 
-        <div class="logo">
-            <img src="/images/logo-dark.svg" alt="logo">
+            <div class="logo">
+                <img src="/images/logo-dark.svg" alt="logo">
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="right">
+                <p>Call us: <span>(123) 4567 890</span></p>
+                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a></i>
+            </div>
+
         </div>
 
-        <div class="menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
+    </header>
 
-        <div class="right">
-            <p>Call us: <span>(123) 4567 890</span></p>
-            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a></i>
-        </div>
+    <section class="hero">
 
-    </div>
+        <p>Professional cleaning services</p>
+        <h2>Commercial & Residential Cleaning</h2>
 
-</header>
+    </section>
 
-<section class="hero">
-    <p>Professional cleaning services</p>
-    <h2>Commercial & Residential Cleaning</h2>
-</section>
+    <main>
+
+        <section class="appointment">
+
+            <div class="box">
     
+                <div class="text">
+                    <h3>Get Free Appointment</h3>
+                </div>
+    
+                <div class="form">
+                    <form action="">
+                        <input type="text" name="name" id="name" placeholder="Your Name *">
+                        <input type="tel" name="phone" id="phone" placeholder="Your Phone Number *">
+                        <select name="service" id="service">
+                            <option value="" disabled selected>Select Service *</option>
+                        </select>
+                        <input type="submit" value="Book Appointment">
+                    </form>
+                </div>
+            </div>
+    
+        </section>
+
+
+
+    </main>
+
 </body>
+
 </html>
