@@ -60,17 +60,17 @@ html {
 
 @font-face {
   font-family: "OpenSans Italic";
-  src: url(../Font/Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf);
+  src: url(./Font/Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf);
 }
 
 @font-face {
   font-family: "OpenSans";
-  src: url(../Font/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+  src: url(./Font/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 
 @font-face {
   font-family: "Sen";
-  src: url(../Font/Open_Sans,Sen/Sen/Sen-VariableFont_wght.ttf);
+  src: url(./Font/Open_Sans,Sen/Sen/Sen-VariableFont_wght.ttf);
 }
 
 /* Header */
@@ -126,7 +126,7 @@ header .nav .right span {
 
 main .hero {
   position: relative; 
-  background-image: url("../images/home-hero-background.webp");
+  background-image: url(./images/home-hero-background.webp);
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -554,7 +554,7 @@ main .logos {
 /* Contact */
 
 main .contactHero {
-  background-image: url("../images/home-contact-section-background.webp");
+  background-image: url(./images/home-contact-section-background.webp);
   display: flex;
   justify-content: space-around;
   align-items: center;
