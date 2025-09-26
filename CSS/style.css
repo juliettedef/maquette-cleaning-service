@@ -73,10 +73,6 @@ html {
   src: url(../Font/Open_Sans,Sen/Sen/Sen-VariableFont_wght.ttf);
 }
 
-body {
-  background-color: black;
-}
-
 /* Header */
 
 header {
@@ -216,4 +212,118 @@ header .nav .right span {
 .appointment input[type="submit"] {
   background: black;
   color: white;
+}
+
+/* Services */
+
+.services {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.services::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: -8rem;
+  height: 35rem;
+  background: black;
+}
+
+.services .servicesText,
+.services .servicesCard,
+.services .servicesButton {
+  position: relative;
+}
+
+.appointment .box {
+  position: relative;
+  z-index: 2;
+}
+
+.services .servicesText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  color: white;
+  font-family: "Sen";
+  margin: 5rem;
+}
+
+.services .servicesText h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.services .servicesText p {
+  font-size: 1.2rem;
+  opacity: 60%;
+  width: 60%;
+  text-align: center;
+} 
+
+.services .servicesCard {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.services .servicesCard .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;  
+  height: 20rem;  
+  padding: 2rem;
+  gap: 1rem;
+  border: 2px solid #f7f7f7;
+}
+
+.services .servicesCard .card img {
+  width: 5rem;
+}
+
+.services .servicesCard .card h3 {
+  font-family: "Sen";
+}
+
+.services .servicesCard .card p {
+  text-align: center;
+  width: 70%;
+  font-family: "OpenSans";
+  font-size: 0.9rem;
+}
+
+.services .servicesCard .card .price {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+.services .servicesButton {
+  display: flex;
+  justify-content: center;
+  padding: 4rem;
+  gap: 2rem;
+}
+
+.services .servicesButton [type="submit"] {
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: black;
+  border-style: none;
+  font-family: "OpenSans";
+  color: white;
+}
+
+.services .servicesButton [type="submit"]:hover {
+  background-color: #f7f7f7;
+  color: black;
+  border: 1px solid black;
+  transition: 0.2s;
 }
