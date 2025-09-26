@@ -409,3 +409,55 @@ header .nav .right span {
   color: black;
   outline: 1px solid black;
 }
+
+/* How it Works */
+
+.how .howText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.how .howText p {
+  font-family: "OpenSans";
+  font-weight: bold;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+.how .howText h2 {
+  font-family: "Sen";
+  font-size: 2rem;
+}
+
+.how .howBox {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 3rem;
+  gap: 2rem;
+}
+
+.how .howBox .howCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e3e2e2;
+  height: 20rem;
+}
+
+.how .howBox .howCard h3 {
+  font-family: "Sen";
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.how .howBox .howCard p {
+  font-family: "OpenSans";
+  text-align: center;
+  width: 80%;
+}
+
+/* Review */
