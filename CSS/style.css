@@ -408,6 +408,7 @@ header .nav .right span {
   background-color: white;
   color: black;
   outline: 1px solid black;
+  transition: 0.2s;
 }
 
 /* How it Works */
@@ -423,6 +424,7 @@ header .nav .right span {
   font-weight: bold;
   padding-top: 3rem;
   padding-bottom: 1rem;
+  opacity: 70%;
 }
 
 .how .howText h2 {
@@ -446,6 +448,7 @@ header .nav .right span {
   justify-content: center;
   border: 1px solid #e3e2e2;
   height: 20rem;
+  margin-bottom: 5rem;
 }
 
 .how .howBox .howCard h3 {
@@ -460,4 +463,84 @@ header .nav .right span {
   width: 80%;
 }
 
+.how .howBox .howCard:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s
+}
+
 /* Review */
+
+.review .reviewTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Sen";
+}
+
+.review .reviewTitle p {
+  font-family: "OpenSans";
+  font-weight: bold;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  opacity: 70%;
+}
+
+.review .reviewTitle h2 {
+  font-family: "Sen";
+  font-size: 2rem;
+}
+
+.reviewBox {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 3rem;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
+.reviewCard {
+  border: 1px solid #e3e2e2;
+  padding: 2rem;
+  margin-bottom: 5rem;
+}
+
+.reviewCard .svg svg {
+  width: 2rem;
+  color: #ffcd05; 
+  margin-bottom: 1rem;
+}
+
+.reviewText {
+  margin-bottom: 1.5rem;
+  width: 80%;
+  margin-left: 2rem;
+  font-family: "OpenSans";
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+}
+
+.bottomCard {
+  display: flex;
+  gap: 1rem;
+  font-family: "OpenSans";
+  margin-left: 2rem;
+}
+
+.bottomCard .name {
+  font-weight: bold;
+}
+
+.bottomCard .avatarText .type {
+  font-size: 0.8rem;
+}
+
+.review .reviewBox .reviewCard:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s
+}
+
