@@ -182,9 +182,12 @@ header .nav .right span {
 
 .appointment .box {
   background: white;
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   padding: 2rem;
+  padding-bottom: 4rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .appointment .text {
@@ -195,14 +198,14 @@ header .nav .right span {
 
 .appointment form {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 1rem;
 }
 
 .appointment input,
 .appointment select {
   display: flex;
-  width: 15rem;
+  width: 25rem;
   padding: 1rem;
   border-style: none;
   background-color: #f7f7f7;
@@ -214,7 +217,14 @@ header .nav .right span {
   color: white;
 }
 
-/* Services */
+.appointment input[type="submit"]:hover {
+  background: white;
+  color: black;
+  outline: 1px solid black;
+  transition: 0.2s;
+}
+
+/* Services background */
 
 .services {
   display: flex;
@@ -242,6 +252,8 @@ header .nav .right span {
   z-index: 2;
 }
 
+/* Services text */
+
 .services .servicesText {
   display: flex;
   flex-direction: column;
@@ -250,6 +262,7 @@ header .nav .right span {
   color: white;
   font-family: "Sen";
   margin: 5rem;
+  padding-top: 5rem;
 }
 
 .services .servicesText h2 {
@@ -264,6 +277,8 @@ header .nav .right span {
   text-align: center;
 } 
 
+/* Services cards */
+
 .services .servicesCard {
   display: flex;
   justify-content: center;
@@ -277,10 +292,15 @@ header .nav .right span {
   flex-direction: column;
   align-items: center;
   background: white;  
-  height: 20rem;  
+  height: 18rem;  
   padding: 2rem;
   gap: 1rem;
   border: 2px solid #f7f7f7;
+}
+
+.services .servicesCard .card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s
 }
 
 .services .servicesCard .card img {
@@ -304,6 +324,8 @@ header .nav .right span {
   margin-top: 2rem;
 }
 
+/* Services buttons */
+
 .services .servicesButton {
   display: flex;
   justify-content: center;
@@ -324,6 +346,66 @@ header .nav .right span {
 .services .servicesButton [type="submit"]:hover {
   background-color: #f7f7f7;
   color: black;
-  border: 1px solid black;
+  outline: 1px solid black;
   transition: 0.2s;
+}
+
+/* About */
+
+.about {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 3rem;
+  font-family: "OpenSans";
+}
+
+.about .aboutCard {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 5rem;
+}
+
+.about .aboutImg {
+  width: 130rem;
+}
+
+.about .aboutText h2 {
+  font-family: "Sen";
+  font-size: 2rem;
+  width: 20rem;
+}
+
+.about .aboutText p {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.about .aboutText ul {
+  font-family: "Sen";
+  font-weight: bold;
+}
+
+.about .aboutText ul li {
+  padding-top: 1rem;
+}
+
+.about .aboutText ul li i {
+  margin-right: 1rem;
+}
+
+.about .aboutText a {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 1rem;
+}
+
+.about .aboutText a:hover {
+  background-color: white;
+  color: black;
+  outline: 1px solid black;
 }
