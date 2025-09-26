@@ -126,7 +126,7 @@ header .nav .right span {
 
 main .hero {
   position: relative; 
-  background-image: url(../images/home-hero-background.webp);
+  background-image: url("../images/home-hero-background.webp");
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -554,7 +554,7 @@ main .logos {
 /* Contact */
 
 main .contactHero {
-  background-image: url(../images/home-contact-section-background.webp);
+  background-image: url("../images/home-contact-section-background.webp");
   display: flex;
   justify-content: space-around;
   align-items: center;
